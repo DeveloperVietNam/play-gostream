@@ -1,4 +1,7 @@
 <script>
     let url = window.location.href
-    window.location = `https://www.google.com/search?q=${url}`
+    if (url.includes("/embed/")) {
+        url = url.replace("?", "&")
+        window.location = `https://play.gostream.video/embed/index.html?id=${url.split('/').pop()}`
+    }
 </script>
