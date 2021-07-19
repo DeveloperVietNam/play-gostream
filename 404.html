@@ -1,5 +1,5 @@
 <script>
-    self.location.ancestorOrigins[0]
+    let domain = self.location.ancestorOrigins[0]
     if (domain) {
         let url = window.location.href
         if (url.includes("/embed/")) {
