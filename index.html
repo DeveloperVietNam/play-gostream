@@ -1,10 +1,20 @@
 <!DOCTYPE html>
-<html>
-<body>
+<style>
+    .video-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 100vh;
+    }
 
-<h1>Demo Player</h1>
-  <div style="width: 100%; height: 80vh;">
-    <iframe  style="width: 100%; height: 100%;" src="https://play.gostream.video/embed/6106c885f110152e0d94835a"> </iframe>
-  </div>
-</body>
-</html>
+    .video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+</style>
+<div class="video-container">
+    <iframe class="video" src="https://play.gostream.video/embed/6106c885f110152e0d94835a" allowfullscreen></iframe>
+</div>
