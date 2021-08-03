@@ -1,0 +1,10 @@
+[{
+            "kind": "captions",
+            "file": "https://www.yourdomain.com/caption-file_en.vtt",
+            "label": "English"
+          },   
+          {
+            "kind": "captions",
+            "file": "https://www.yourdomain.com/caption-file_sp.vtt",
+            "label": "Español"
+        }]
