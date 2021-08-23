@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> GoStream </title>
+<meta charset="utf-8">
+<!-- <script src="https://public.gostream.video/js/devtools-detector/devtools-detector.js"></script>
+<script>
+        !function () {
+            /*referans:box*/
+            navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i) || (devtoolsDetector.addListener(function (t, e) {
+                t && (document.location.href = "https://public.gostream.video/404.html")
+            }), devtoolsDetector.lanuch())
+        }();
+    </script> -->
+<script src="http://ssl.p.jwpcdn.com/player/v/8.21.1/jwplayer.js"></script>
+
+</head>
+<body style="margin: 0">
+<div id="player" style="width: 100%; height: 100%;"></div>
+<script>
+    jwplayer.key = "W7zSm81+mmIsg7F+fyHRKhF3ggLkTqtGMhvI92kbqf/ysE99";
+  var playerInstance = jwplayer("player");
+    playerInstance.setup({
+        playlist: [{
+            sources: [{
+                type: "hls",
+                file: "http://116.203.115.76:1212/hls/61222c5cfa8e48f14ef99bfb/main.m3u8"
+            }]
+        }],
+        primary: "html5",
+        hlshtml: true,
+        width: "100%",
+        height: "100vh",
+    });
+</script>
+</body>
+</html>
